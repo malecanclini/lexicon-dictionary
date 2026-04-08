@@ -1,0 +1,148 @@
+.wrap {
+  animation: fadeUp 0.4s ease forwards;
+}
+
+.wordHeader {
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 1.2rem;
+  margin-bottom: 1.8rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.wordTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  line-height: 1;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.phonetic {
+  font-family: 'DM Mono', monospace;
+  font-size: 1rem;
+  color: var(--amber);
+  margin-top: 0.35rem;
+}
+
+.audioBtn {
+  background: var(--ink);
+  color: var(--paper);
+  border: none;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+  transition: background 0.16s;
+}
+.audioBtn:hover { background: var(--amber); }
+
+.partBlock {
+  margin-bottom: 2.2rem;
+}
+
+.partLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.1rem;
+}
+
+.partName {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.partLine {
+  flex: 1;
+  height: 1px;
+  background: var(--rule);
+}
+
+.defsLabel {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.68rem;
+  color: var(--muted);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.defItem {
+  padding: 0.65rem 0 0.65rem 1.2rem;
+  border-left: 3px solid var(--cream);
+  margin-bottom: 0.6rem;
+  transition: border-color 0.18s;
+}
+.defItem:hover { border-left-color: var(--amber); }
+
+.defNum {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.68rem;
+  color: var(--amber);
+  margin-bottom: 0.2rem;
+}
+
+.defText {
+  font-size: 0.975rem;
+  line-height: 1.65;
+  color: var(--ink);
+}
+
+.defExample {
+  font-style: italic;
+  color: var(--muted);
+  font-size: 0.88rem;
+  margin-top: 0.35rem;
+  line-height: 1.5;
+}
+.defExample::before { content: '"'; }
+.defExample::after  { content: '"'; }
+
+.tagRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.85rem;
+}
+
+.tagLabel {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-right: 0.2rem;
+}
+
+.tag {
+  font-size: 0.8rem;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid var(--rule);
+  color: var(--muted);
+  background: transparent;
+  transition: all 0.15s;
+}
+.tag:hover {
+  border-color: var(--amber);
+  color: var(--amber);
+}
+
+.source {
+  margin-top: 1.8rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--rule);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--muted);
+  word-break: break-all;
+}

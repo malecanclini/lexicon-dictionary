@@ -1,0 +1,80 @@
+.header {
+  padding: 2.5rem 2rem 1.5rem;
+  text-align: center;
+  border-bottom: 1.5px solid var(--rule);
+  background: rgba(247,243,236,0.92);
+  backdrop-filter: blur(6px);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.brand {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  line-height: 1;
+}
+
+.brand span {
+  color: var(--amber);
+  font-style: italic;
+}
+
+.tagline {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--muted);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-top: 0.4rem;
+}
+
+.searchWrap {
+  max-width: 580px;
+  margin: 1.8rem auto 0;
+  display: flex;
+  border: 2px solid var(--ink);
+  background: #fff;
+  box-shadow: 4px 4px 0 var(--amber);
+}
+
+.searchInput {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0.85rem 1rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  background: transparent;
+  color: var(--ink);
+}
+
+.searchInput::placeholder {
+  color: var(--rule);
+  font-style: italic;
+}
+
+.searchBtn {
+  background: var(--ink);
+  color: var(--paper);
+  border: none;
+  padding: 0 1.2rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: background 0.18s;
+  white-space: nowrap;
+}
+
+.searchBtn:hover { background: var(--amber); }
+
+@media (max-width: 520px) {
+  .header { padding: 1.5rem 1rem 1rem; }
+  .searchWrap { margin-top: 1.2rem; }
+}

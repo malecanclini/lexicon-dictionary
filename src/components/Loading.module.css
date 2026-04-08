@@ -1,0 +1,22 @@
+.wrap {
+  text-align: center;
+  padding: 5rem 1rem;
+  animation: fadeUp 0.3s ease forwards;
+}
+
+.spinner {
+  width: 36px;
+  height: 36px;
+  border: 3px solid var(--rule);
+  border-top-color: var(--amber);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  margin: 0 auto 1.2rem;
+}
+
+.text {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.78rem;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+}
